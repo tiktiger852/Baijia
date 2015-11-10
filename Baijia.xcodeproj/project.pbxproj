@@ -1,0 +1,292 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04C47F531BF238EC004AC735 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C47F521BF238EC004AC735 /* AppDelegate.swift */; };
+		04C47F551BF238EC004AC735 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C47F541BF238EC004AC735 /* ViewController.swift */; };
+		04C47F581BF238EC004AC735 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C47F561BF238EC004AC735 /* Main.storyboard */; };
+		04C47F5A1BF238EC004AC735 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C47F591BF238EC004AC735 /* Assets.xcassets */; };
+		04C47F5D1BF238EC004AC735 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C47F5B1BF238EC004AC735 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04C47F4F1BF238EC004AC735 /* Baijia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baijia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04C47F521BF238EC004AC735 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04C47F541BF238EC004AC735 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04C47F571BF238EC004AC735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04C47F591BF238EC004AC735 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04C47F5C1BF238EC004AC735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04C47F5E1BF238EC004AC735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04C47F4C1BF238EC004AC735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04C47F461BF238EC004AC735 = {
+			isa = PBXGroup;
+			children = (
+				04C47F511BF238EC004AC735 /* Baijia */,
+				04C47F501BF238EC004AC735 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04C47F501BF238EC004AC735 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04C47F4F1BF238EC004AC735 /* Baijia.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04C47F511BF238EC004AC735 /* Baijia */ = {
+			isa = PBXGroup;
+			children = (
+				04C47F521BF238EC004AC735 /* AppDelegate.swift */,
+				04C47F541BF238EC004AC735 /* ViewController.swift */,
+				04C47F561BF238EC004AC735 /* Main.storyboard */,
+				04C47F591BF238EC004AC735 /* Assets.xcassets */,
+				04C47F5B1BF238EC004AC735 /* LaunchScreen.storyboard */,
+				04C47F5E1BF238EC004AC735 /* Info.plist */,
+			);
+			path = Baijia;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04C47F4E1BF238EC004AC735 /* Baijia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04C47F611BF238EC004AC735 /* Build configuration list for PBXNativeTarget "Baijia" */;
+			buildPhases = (
+				04C47F4B1BF238EC004AC735 /* Sources */,
+				04C47F4C1BF238EC004AC735 /* Frameworks */,
+				04C47F4D1BF238EC004AC735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Baijia;
+			productName = Baijia;
+			productReference = 04C47F4F1BF238EC004AC735 /* Baijia.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04C47F471BF238EC004AC735 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = mac;
+				TargetAttributes = {
+					04C47F4E1BF238EC004AC735 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 96623PFL44;
+					};
+				};
+			};
+			buildConfigurationList = 04C47F4A1BF238EC004AC735 /* Build configuration list for PBXProject "Baijia" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04C47F461BF238EC004AC735;
+			productRefGroup = 04C47F501BF238EC004AC735 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04C47F4E1BF238EC004AC735 /* Baijia */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04C47F4D1BF238EC004AC735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C47F5D1BF238EC004AC735 /* LaunchScreen.storyboard in Resources */,
+				04C47F5A1BF238EC004AC735 /* Assets.xcassets in Resources */,
+				04C47F581BF238EC004AC735 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04C47F4B1BF238EC004AC735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C47F551BF238EC004AC735 /* ViewController.swift in Sources */,
+				04C47F531BF238EC004AC735 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04C47F561BF238EC004AC735 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04C47F571BF238EC004AC735 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04C47F5B1BF238EC004AC735 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04C47F5C1BF238EC004AC735 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04C47F5F1BF238EC004AC735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04C47F601BF238EC004AC735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04C47F621BF238EC004AC735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Baijia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yan.Baijia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04C47F631BF238EC004AC735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Baijia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yan.Baijia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04C47F4A1BF238EC004AC735 /* Build configuration list for PBXProject "Baijia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04C47F5F1BF238EC004AC735 /* Debug */,
+				04C47F601BF238EC004AC735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04C47F611BF238EC004AC735 /* Build configuration list for PBXNativeTarget "Baijia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04C47F621BF238EC004AC735 /* Debug */,
+				04C47F631BF238EC004AC735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04C47F471BF238EC004AC735 /* Project object */;
+}
