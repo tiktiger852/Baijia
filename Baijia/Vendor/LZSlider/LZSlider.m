@@ -65,21 +65,18 @@
 
 - (void)setTrack {
     _trackImageView.frame = CGRectMake(self.dotWidth/2, (self.frame.size.height - _progressWidth)/2, self.frame.size.width - self.dotWidth, _progressWidth);
-    _trackImageView.layer.cornerRadius = _progressWidth/2;
 }
 
 - (void)setBuffer {
     CGFloat offsetX = (self.frame.size.width - self.dotWidth) * _buffer;
     
     _bufferImageView.frame = CGRectMake(self.dotWidth/2, (self.frame.size.height - _progressWidth)/2, offsetX, _progressWidth);
-    _bufferImageView.layer.cornerRadius = _progressWidth/2;
 }
 
 - (void)setProgress {
     CGFloat offsetX = (self.frame.size.width - self.dotWidth) * _progress;
 
     _progressView.frame = CGRectMake(self.dotWidth/2, (self.frame.size.height - _progressWidth)/2, offsetX, _progressWidth);
-    _progressView.layer.cornerRadius = _progressWidth/2;
 }
 
 - (void)setProgress:(CGFloat)progress {
@@ -123,8 +120,13 @@
     CGFloat y = (self.frame.size.height-_progressWidth)/2;
     
     _trackImageView.frame = CGRectMake(_trackImageView.frame.origin.x, y, _trackImageView.frame.size.width, _progressWidth);
+    _trackImageView.layer.cornerRadius = _progressWidth/2;
+    
     _bufferImageView.frame = CGRectMake(_bufferImageView.frame.origin.x, y, _bufferImageView.frame.size.width, _progressWidth);
+    _bufferImageView.layer.cornerRadius = _progressWidth/2;
+    
     _progressView.frame = CGRectMake(_progressView.frame.origin.x, y, _progressView.frame.size.width, _progressWidth);
+    _progressView.layer.cornerRadius = _progressWidth/2;
 
     UIView *trackDotView = [[_dotView subviews] objectAtIndex:1];
     CGRect rect = trackDotView.frame;
@@ -231,7 +233,11 @@
         offsetX = self.frame.size.width - self.dotWidth/2;
     }
 
-    self.progress = (offsetX - self.dotWidth/2)/(self.frame.size.width - self.dotWidth);
+    CGFloat progress = (offsetX - self.dotWidth/2)/(self.frame.size.width - self.dotWidth);
+    self.progress = progress;
+    if(self.valueChanging) {
+        self.valueChanging(progress);
+    }
 }
 
 - (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

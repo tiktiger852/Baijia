@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+class Media: NSObject, DOUAudioFile {
+    
+    var title: String!
+    var urlString: String!
+    
+    init(title: String!, urlString: String!) {
+        self.title = title
+        self.urlString = urlString
+    }
+    
+    func audioFileURL() -> NSURL! {
+        return NSURL(string: self.urlString)!
+    }
+}

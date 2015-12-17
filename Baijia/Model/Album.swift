@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 
-public struct Album {
+struct Album {
     
     let id: Int
     let albumId: Int
@@ -28,4 +29,24 @@ public struct Album {
     let lastUptrackAt: Int
     let isFinished: Int
     let serialState: Int
+    
+    init(data: JSON) {
+        self.id = data["id"].intValue
+        self.albumId = data["albumId"].intValue
+        self.uid = data["uid"].intValue
+        self.intro = data["intro"].stringValue
+        self.nickname = data["nickname"].stringValue
+        self.albumCoverUrl290 = data["albumCoverUrl290"].stringValue
+        self.coverMiddle = data["coverMiddle"].stringValue
+        self.title = data["title"].stringValue
+        self.tags = data["tags"].stringValue
+        self.tracks = data["tracks"].intValue
+        self.tracksCounts = data["tracksCounts"].intValue
+        self.playsCounts = data["playsCounts"].intValue
+        self.lastUptrackId = data["lastUptrackId"].intValue
+        self.lastUptrackTitle = data["lastUptrackTitle"].stringValue
+        self.lastUptrackAt = data["lastUptrackAt"].intValue
+        self.isFinished = data["isFinished"].intValue
+        self.serialState = data["serialState"].intValue
+    }
 }

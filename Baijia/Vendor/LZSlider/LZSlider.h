@@ -27,6 +27,7 @@ typedef void(^valueChangedBlock)(CGFloat progress);
 @property (nonatomic, assign) CGFloat progress;
 
 @property (nonatomic, strong) dispatch_block_t beginChageValue;
+@property (nonatomic, strong) valueChangedBlock valueChanging;
 @property (nonatomic, strong) valueChangedBlock valueChanged;
 
 - (void)start;

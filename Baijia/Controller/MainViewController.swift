@@ -9,12 +9,12 @@
 import UIKit
 import HMSegmentedControl
 
-class RootViewController: MyViewController, UIScrollViewDelegate {
+class MainViewController: MyViewController, UIScrollViewDelegate {
     
     //MARK: - Properties
     private var titles = ["推荐", "名师经典", "历史传奇", "风云人物", "帝王将相", "国学经典"]
     
-    private lazy var navItem: UINavigationItem = {
+    lazy var navItem: UINavigationItem = {
         let navItem = UINavigationItem(title: "百家讲坛")
         return navItem
     }()
@@ -58,7 +58,7 @@ class RootViewController: MyViewController, UIScrollViewDelegate {
         return segmentedControl
     }()
     
-    private lazy var contentView: UIScrollView = {
+    lazy var contentView: UIScrollView = {
         [unowned self] in
         let contentView = UIScrollView(frame: CGRectMake(0, self.segmentedControl.y, SCREEN_WIDTH, SCREEN_HEIGHT - self.segmentedControl.y))
         contentView.delegate = self
@@ -67,7 +67,7 @@ class RootViewController: MyViewController, UIScrollViewDelegate {
         contentView.showsVerticalScrollIndicator = false
         contentView.bounces = false
         contentView.contentSize = CGSizeMake(CGFloat(self.titles.count)*SCREEN_WIDTH, contentView.height)
-
+        
         return contentView
     }()
     
@@ -78,20 +78,27 @@ class RootViewController: MyViewController, UIScrollViewDelegate {
         self.view.addSubview(self.navBar)
         self.view.insertSubview(self.segmentedControl, belowSubview: self.navBar)
         self.view.insertSubview(self.contentView, belowSubview: self.segmentedControl)
-            
         self.addController()
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        let leftButton = UIButton(type: .Custom)
+        leftButton.frame = CGRectMake(0, 0, 20, 20)
+        leftButton.setImage(UIImage(named: "iconfont-yonghu")!, forState: .Normal)
+        leftButton.addTarget(self, action: "leftButtonClicked", forControlEvents: .TouchUpInside)
+        
+        self.navItem.leftBarButtonItem = UIBarButtonItem(customView: leftButton)
+        
+        var items = [UIBarButtonItem]()
         if let playerViewController = (UIApplication.sharedApplication().delegate as! AppDelegate).playerViewController {
             let playingAnimImageView = UIImageView(frame: CGRectMake(0, 0, 24, 24))
             playingAnimImageView.userInteractionEnabled = true
             playingAnimImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "gotoPlayerViewController"))
             
             let playingItemButton = UIBarButtonItem(customView: playingAnimImageView)
-            self.navItem.rightBarButtonItem = playingItemButton
+            items.append(playingItemButton)
             
             switch(playerViewController.streamer!.status) {
                 case .Playing:
@@ -114,6 +121,14 @@ class RootViewController: MyViewController, UIScrollViewDelegate {
                     playingAnimImageView.image = image("cm2_topbar_icn_playing_prs")!
             }
         }
+        /*
+        let searchButton = UIButton(type: .Custom)
+        searchButton.frame = CGRectMake(0, 0, 24, 24)
+        searchButton.setImage(UIImage(named: "iconfont-sousuo")!, forState: .Normal)
+        searchButton.addTarget(self, action: "searchButtonClicked", forControlEvents: .TouchUpInside)
+        items.append(UIBarButtonItem(customView: searchButton))
+        */
+        self.navItem.rightBarButtonItems = items
     }
     
     //MARK:
@@ -148,6 +163,12 @@ class RootViewController: MyViewController, UIScrollViewDelegate {
         self.navigationController?.pushViewController(playerViewController, animated: true)
     }
     
+    func leftButtonClicked() {
+        if let parentViewController = self.parentViewController as? RootViewController {
+            parentViewController.showLeftViewController()
+        }
+    }
+    
     //MARK: - UIScrollViewDelegate
     
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
@@ -155,5 +176,6 @@ class RootViewController: MyViewController, UIScrollViewDelegate {
         self.segmentedControl.setSelectedSegmentIndex(UInt(index), animated: true)
         self.updateUI(index)
     }
+    
     
 }

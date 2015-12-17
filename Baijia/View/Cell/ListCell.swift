@@ -28,7 +28,7 @@ class ListCell: UITableViewCell {
     }
     
     override func awakeFromNib() {
-        self.separatorInset = UIEdgeInsetsMake(0, 90, 0, 0)
+        self.separatorInset = UIEdgeInsetsMake(0, 85, 0, 0)
         
         let selectedBackgroundView = UIView(frame: self.contentView.bounds)
         selectedBackgroundView.backgroundColor = RGB(247, 247, 247)
@@ -37,10 +37,10 @@ class ListCell: UITableViewCell {
         self.thumbImageView.layer.borderWidth = 0.5
         self.thumbImageView.layer.borderColor = RGB(234, 234, 234).CGColor
         
-        self.titleLabel.textColor = RGB(54, 54, 54)
-        self.descLabel.textColor = RGB(154, 154, 154)
-        self.playCountLabel.textColor = RGB(154, 154, 154)
-        self.trackCountLabel.textColor = RGB(154, 154, 154)
+        self.titleLabel.textColor = RGB(51, 51, 51)
+        self.descLabel.textColor = RGB(153, 153, 153)
+        self.playCountLabel.textColor = RGB(153, 153, 153)
+        self.trackCountLabel.textColor = RGB(153, 153, 153)
     }
     
     //MARK: ==================

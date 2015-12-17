@@ -18,8 +18,8 @@ class TabCell: UITableViewCell {
         self.selectedBackgroundView = nil
         self.selectionStyle = .None
         
-        self.tabLabel.textColor = RGB(54, 54, 54)
-        self.moreLabel.textColor = RGB(154, 154, 154)
+        self.tabLabel.textColor = RGB(51, 51, 51)
+        self.moreLabel.textColor = RGB(153, 153, 153)
     }
     
     //MARK: ==============

@@ -14,7 +14,7 @@
  *
  */
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 typedef void (^DOUSimpleHTTPRequestCompletedBlock)(void);
 typedef void (^DOUSimpleHTTPRequestProgressBlock)(double downloadProgress);
